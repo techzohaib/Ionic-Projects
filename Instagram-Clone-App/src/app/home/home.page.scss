@@ -1,0 +1,39 @@
+// CSS classes for components
+.insta-heading {
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  color: black;
+}
+.icn-btn {
+  padding-right: 10px;
+}
+.avtr {
+  border: 1px solid grey;
+}
+.imgs {
+  height: 100px;
+  width: 100px;
+}
+.image {
+    width: 100%;
+}
+.post-counter {
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 25px;
+    margin-top: -1px;
+}
+.post-description {
+  text-align: justify;
+  padding: 25px;
+  margin-top: -35px;
+  font-size: 15px;
+}
+// Direct CSS to Components
+ion-avatar {
+  border: 1px solid #f32d09;
+  height: 50px;
+}
+ion-label {
+  padding-left: 10px;
+}

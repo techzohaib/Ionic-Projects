@@ -1,0 +1,176 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="insta-heading" style="float: left !important;">
+      Instagram
+    </ion-title>
+    <ion-icon slot="end" size="large" class="icn-btn" (click)="messages()" name="chatbubble-ellipses-outline" style="color:black"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Instagram Stories Section -->
+  <ion-slides style="height:auto; border-bottom: 1px solid grey; padding: 10px;" spaceBetween="0" slidesPerView="auto">
+		<ion-slide>
+				<ion-avatar class="avtr">
+          <img src="./assets/imgs/story1.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c1.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c2.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c1.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c2.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c2.jpg" class="imgs">
+        </ion-avatar>
+        &nbsp;&nbsp;
+        <ion-avatar>
+          <img src="./assets/imgs/c2.jpg" class="imgs">
+        </ion-avatar>
+		</ion-slide>
+</ion-slides>
+
+<!-- News Feed Section -->
+<ion-list *ngFor="let data of datauser">
+  <!-- Each Post Code Start -->
+  <ion-item>
+    <ion-avatar>
+      <img src="./assets/imgs/c1.jpg">
+    </ion-avatar>
+    <ion-label style="font-size: 14px;">{{data.login.username}}</ion-label>
+    <ion-icon name="ellipsis-horizontal-outline" slot="end" style="color:black"></ion-icon>
+  </ion-item>
+  <div class="image"><img src="https://picsum.photos/id/237/200/300" class="img-fluid mx-auto d-block image"></div>
+  <ion-item lines="none">
+  <div style="margin-top: 10px;">
+    <ion-icon name="heart-outline" style="padding-left: 5px;" size="large"></ion-icon>
+    <ion-icon name="chatbubble-outline" style="padding-left: 15px;" size="large"></ion-icon>
+    <ion-icon name="send-outline" style="padding-left: 15px;" size="large"></ion-icon>
+  </div>
+  <ion-icon name="bookmark-outline" size="large" slot="end" color="black"></ion-icon>
+  </ion-item>
+  <p class="post-counter">5,138 views</p>
+  <p class="post-description"><b>{{data.login.username}}</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Amet doloremque necessitatibus quia ea ipsum minima? Praesentium rerum optio ea corrupti?
+    Quasi sit dolore exercitationem quisquam dolorem, quidem doloribus similique ratione.</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -25px; font-size: 14px;">View all 104 comments</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -5px; font-size: 12px;">7 hours ago</p>
+    <!-- End of Each Post Code -->
+
+    <!-- Each Post Code Start -->
+  <ion-item>
+    <ion-avatar>
+      <img src="./assets/imgs/c1.jpg">
+    </ion-avatar>
+    <ion-label style="font-size: 14px;">{{data.login.username}}</ion-label>
+    <ion-icon name="ellipsis-horizontal-outline" slot="end" style="color:black"></ion-icon>
+  </ion-item>
+  <img src="https://picsum.photos/seed/picsum/200/300" class="img-fluid mx-auto d-block image">
+  <ion-item lines="none">
+  <div style="margin-top: 10px;">
+    <ion-icon name="heart-outline" style="padding-left: 5px;" size="large"></ion-icon>
+    <ion-icon name="chatbubble-outline" style="padding-left: 15px;" size="large"></ion-icon>
+    <ion-icon name="send-outline" style="padding-left: 15px;" size="large"></ion-icon>
+  </div>
+  <ion-icon name="bookmark-outline" size="large" slot="end" color="black"></ion-icon>
+  </ion-item>
+  <p class="post-counter">5,138 views</p>
+  <p class="post-description"><b>{{data.login.username}}</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Amet doloremque necessitatibus quia ea ipsum minima? Praesentium rerum optio ea corrupti?
+    Quasi sit dolore exercitationem quisquam dolorem, quidem doloribus similique ratione.</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -25px; font-size: 14px;">View all 104 comments</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -5px; font-size: 12px;">7 hours ago</p>
+    <!-- End of Each Post Code -->
+
+    <!-- Each Post Code Start -->
+  <ion-item>
+    <ion-avatar>
+      <img src="./assets/imgs/c1.jpg">
+    </ion-avatar>
+    <ion-label style="font-size: 14px;">{{data.login.username}}</ion-label>
+    <ion-icon name="ellipsis-horizontal-outline" slot="end" style="color:black"></ion-icon>
+  </ion-item>
+  <img src="https://picsum.photos/200/300?grayscale" class="img-fluid mx-auto d-block image">
+  <ion-item lines="none">
+  <div style="margin-top: 10px;">
+    <ion-icon name="heart-outline" style="padding-left: 5px;" size="large"></ion-icon>
+    <ion-icon name="chatbubble-outline" style="padding-left: 15px;" size="large"></ion-icon>
+    <ion-icon name="send-outline" style="padding-left: 15px;" size="large"></ion-icon>
+  </div>
+  <ion-icon name="bookmark-outline" size="large" slot="end" color="black"></ion-icon>
+  </ion-item>
+  <p class="post-counter">5,138 views</p>
+  <p class="post-description"><b>{{data.login.username}}</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Amet doloremque necessitatibus quia ea ipsum minima? Praesentium rerum optio ea corrupti?
+    Quasi sit dolore exercitationem quisquam dolorem, quidem doloribus similique ratione.</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -25px; font-size: 14px;">View all 104 comments</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -5px; font-size: 12px;">7 hours ago</p>
+    <!-- End of Each Post Code -->
+
+    <!-- Each Post Code Start -->
+  <ion-item>
+    <ion-avatar>
+      <img src="./assets/imgs/c1.jpg">
+    </ion-avatar>
+    <ion-label style="font-size: 14px;">{{data.login.username}}</ion-label>
+    <ion-icon name="ellipsis-horizontal-outline" slot="end" style="color:black"></ion-icon>
+  </ion-item>
+  <img src="https://picsum.photos/200/300/?blur" class="img-fluid mx-auto d-block image">
+  <ion-item lines="none">
+  <div style="margin-top: 10px;">
+    <ion-icon name="heart-outline" style="padding-left: 5px;" size="large"></ion-icon>
+    <ion-icon name="chatbubble-outline" style="padding-left: 15px;" size="large"></ion-icon>
+    <ion-icon name="send-outline" style="padding-left: 15px;" size="large"></ion-icon>
+  </div>
+  <ion-icon name="bookmark-outline" size="large" slot="end" color="black"></ion-icon>
+  </ion-item>
+  <p class="post-counter">5,138 views</p>
+  <p class="post-description"><b>{{data.login.username}}</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Amet doloremque necessitatibus quia ea ipsum minima? Praesentium rerum optio ea corrupti?
+    Quasi sit dolore exercitationem quisquam dolorem, quidem doloribus similique ratione.</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -25px; font-size: 14px;">View all 104 comments</p>
+    <p style="color: gray; padding-left: 25px; margin-top: -5px; font-size: 12px;">7 hours ago</p>
+    <!-- End of Each Post Code -->
+</ion-list>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home" style="color: black;"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search">
+          <ion-icon name="search-outline" style="color: black;"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="add">
+          <ion-icon name="add-circle-outline" style="color: black;"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button tab="notifications">
+          <ion-icon name="heart-outline" style="color: black;"></ion-icon>
+          <ion-badge style="background-color: red; color: white;">6</ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="profile" (click)="navigate_profile()">
+          <ion-icon name="person-circle-outline" style="color: black;"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
